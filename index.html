@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio: Yayasan Tausiyah Harian Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#0863da',   
+                        'brand-secondary': '#35a7e9', 
+                        'brand-bg': '#f7ffff',       
+                        'brand-accent': '#35a7e9',    
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7ffff; 
+        }
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+
+  
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform; 
+        }
+        
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        section[id] {
+            scroll-margin-top: 4rem; 
+        }
+
+        #backToTopBtn {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        
+        #backToTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-zinc-800 font-sans antialiased">
+
+
+    <header 
+        class="min-h-screen flex flex-col justify-center items-center px-6 py-24 md:py-32 text-center text-white"
+        style="background-image: linear-gradient(120deg, #35a7e9, #0863da);"
+    >
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <span class="text-sm font-medium uppercase tracking-wider text-white/80">Social Impact Company Profile Website</span>
+            </div>
+            <h1 class="font-sans text-6xl md:text-8xl font-extrabold text-white mb-8">
+                Yayasan Tausiyah Harian Indonesia
+            </h1>
+            <p class="font-sans text-3xl md:text-4xl text-white/80 mb-12 font-medium">
+                "Bersama Membangun Harapan"
+            </p>
+           
+
+            <div class="flex justify-center items-center gap-x-8 gap-y-2 flex-wrap text-white/70 mb-16">
+                <div>
+                    <span class="font-semibold text-white">Role:</span> Fullstack Development (Solo Project)
+                </div>
+                <div class="text-white/30 hidden md:block">|</div>
+                <div>
+                    <span class="font-semibold text-white">Year:</span> 2025
+                </div>
+            </div>
+            
+
+            <div class="relative w-full max-w-4xl mx-auto mt-16" aria-label="Mockup website di laptop dan mobile">
+                <img src="assets/main page.png" 
+                     alt="Tampilan website Tausiyah Harian di laptop" 
+                     class="rounded-lg shadow-2xl w-full">
+                <img src="assets/main page mobile.png" 
+                     alt="Tampilan website Tausiyah Harian di mobile" 
+                     class="absolute -bottom-12 md:-bottom-20 -right-4 md:-right-12 w-1/3 md:w-1/4 max-w-[200px] rounded-lg shadow-2xl border-4 border-brand-bg">
+            </div>
+
+            <p class="max-w-2xl mx-auto text-base text-white/90 mt-24 md:mt-32 leading-relaxed">
+                <span class="font-semibold text-white">Project By:</span> Muhammad Majdi Fuadi
+            </p>
+             <div class="mb-12">
+                <a href="https://tausiyahharian.com/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-block bg-white text-brand-primary font-bold py-4 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-white/90 text-lg">
+                    Kunjungi Website
+                </a>
+            </div>
+        </div>
+    </header>
+
+ 
+    <main class="max-w-5xl mx-auto px-6 mt-24 md:mt-32">
+
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    Daftar Isi
+                </h2>
+            </div>
+            <div class="md:col-span-8 overflow-x-auto pb-4" 
+                 style="scrollbar-width: thin; scrollbar-color: #35a7e9 #f7ffff;">
+                
+                <ul class="flex flex-nowrap gap-x-3 gap-y-3 whitespace-nowrap">
+                    <li><a href="#context" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">01</span>
+                        <span class="text-base font-semibold">Context</span>
+                    </a></li>
+                    <li><a href="#overview" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">02</span>
+                        <span class="text-base font-semibold">Overview</span>
+                    </a></li>
+                    <li><a href="#audience" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">03</span>
+                        <span class="text-base font-semibold">Audience</span>
+                    </a></li>
+                    <li><a href="#value" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">04</span>
+                        <span class="text-base font-semibold">Brand Value</span>
+                    </a></li>
+                    <li><a href="#design" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">05</span>
+                        <span class="text-base font-semibold">Design</span>
+                    </a></li>
+                    <li><a href="#layout" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">06</span>
+                        <span class="text-base font-semibold">Layout</span>
+                    </a></li>
+                    <li><a href="#dev" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">07</span>
+                        <span class="text-base font-semibold">Development</span>
+                    </a></li>
+                    <li><a href="#screens" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">08</span>
+                        <span class="text-base font-semibold">Key Screens</span>
+                    </a></li>
+                    <li><a href="#responsive" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">09</span>
+                        <span class="text-base font-semibold">Responsive</span>
+                    </a></li>
+                    <li><a href="#result" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">10</span>
+                        <span class="text-base font-semibold">Result</span>
+                    </a></li>
+                    <li><a href="#reflection" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">11</span>
+                        <span class="text-base font-semibold">Reflection</span>
+                    </a></li>
+                    <li><a href="#closing" class="flex items-center gap-2.5 text-zinc-800 hover:text-brand-secondary transition-all duration-200 font-medium bg-white hover:bg-white rounded-lg shadow-sm hover:shadow-md p-3">
+                        <span class="flex-shrink-0 grid place-items-center w-7 h-7 rounded-full bg-brand-secondary text-white font-bold text-sm">12</span>
+                        <span class="text-base font-semibold">Closing</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="context" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">01</span>
+                    Context / The Why
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed">
+                    Website ini dikembangkan sebagai media untuk menyampaikan keberpihakan kepada masyarakat melalui bukti nyata kegiatan sosial. Banyak calon donatur ingin membantu, namun sering kesulitan menemukan lembaga yang terasa dekat secara emosional dan memiliki rekam jejak kegiatan yang jelas.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Dengan menghadirkan dokumentasi dan narasi visual yang humanis, website ini menjadi jembatan antara niat baik dan aksi nyata.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="overview" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">02</span>
+                    Project Overview
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed">
+                    Yayasan Tausiyah Harian Indonesia adalah platform dakwah dan sosial berbasis komunitas yang berfokus pada penyebaran kebaikan dan penguatan nilai-nilai kemanusiaan. Website ini dikembangkan untuk menghadirkan wajah digital yayasan yang kredibel, terpercaya, dan mampu menyampaikan dampak sosial secara visual dan terstruktur.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Tujuan utama website ini adalah membangun kepercayaan calon donatur dan investor dengan transparansi program, kemudahan akses informasi, dan penyajian dokumentasi kegiatan dengan pendekatan visual yang profesional.
+                </p>
+            </div>
+        </section>
+
+  
+        <section id="audience" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">03</span>
+                    Target Audience
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Website ini dirancang secara khusus untuk:
+                </p>
+                <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-zinc-800 leading-relaxed">
+                    <li>Calon donatur yang mencari lembaga sosial yang kredibel</li>
+                    <li>Investor sosial yang ingin memastikan keberlanjutan program</li>
+                    <li>Perorangan atau komunitas yang ingin terlibat dalam kegiatan sosial</li>
+                </ul>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Fokus utama adalah menciptakan pengalaman digital yang memberikan rasa aman dan keyakinan bahwa kontribusi mereka memiliki dampak nyata.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="value" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">04</span>
+                    Brand Value
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Nilai utama yang dikomunikasikan adalah dampak sosial yang berkelanjutan. Website ini diposisikan sebagai media transparansi dan dokumentasi yayasan, bukan sekadar profil statis.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Pendekatan visual yang digunakan menekankan:
+                </p>
+                <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-zinc-800 leading-relaxed">
+                    <li>Trustworthiness</li>
+                    <li>Empati & human touch</li>
+                    <li>Kejelasan informasi</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="design" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">05</span>
+                    Design Direction
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Desain diarahkan pada gaya elegan dan tenang, dengan prinsip editorial-style yang mengutamakan kesan profesional dan kredibel.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Elemen utama:
+                </p>
+                <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-zinc-800 leading-relaxed">
+                    <li>Warna netral & lembut untuk menghadirkan rasa tenang</li>
+                    <li>Tipografi yang bersih dan readable untuk narasi yang kuat</li>
+                    <li>White space yang luas untuk kesan premium dan terkontrol</li>
+                </ul>
+
+
+                <div class="mt-12">
+                    <p class="text-lg text-zinc-800 leading-relaxed mb-4 font-semibold">Palet Warna:</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="w-20 h-20 rounded-lg shadow-inner border border-zinc-200" style="background-color: #0863da;"></div>
+                        <div class="w-20 h-20 rounded-lg shadow-inner border border-zinc-200" style="background-color: #35a7e9;"></div>
+                        <div class="w-20 h-20 rounded-lg shadow-inner border border-zinc-200" style="background-color: #f7ffff;"></div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 mt-2 text-sm text-zinc-600">
+                        <div class="w-20 text-center">#0863da</div>
+                        <div class="w-20 text-center">#35a7e9</div>
+                        <div class="w-20 text-center">#f7ffff</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="layout" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">06</span>
+                    Layout Logic
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Struktur informasi disusun berdasarkan urutan psikologis membangun kepercayaan:
+                </pa>
+                <ol class="list-decimal list-outside pl-5 space-y-3 text-lg text-zinc-800 leading-relaxed">
+                    <li>Hero — Siapa kami</li>
+                    <li>Program — Apa yang kami lakukan</li>
+                    <li>Transparansi — Bagaimana dana dikelola / dampak yang dihasilkan</li>
+                    <li>Dokumentasi kegiatan — Bukti nyata</li>
+                    <li>Call to Action — Ajak kontribusi</li>
+                </ol>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Narasi dibuat mengalir dari pengenalan → pembuktian → konversi.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="dev" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">07</span>
+                    Development
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed">
+                    Website awal dikembangkan menggunakan HTML & CSS untuk memastikan kontrol penuh terhadap visual dan struktur layout. Setelah tahap desain dan konten stabil, sistem kemudian ditransisikan ke PHP + SQL untuk memungkinkan konten menjadi dinamis dan mudah diperbarui.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6 mb-6">
+                    Stack digunakan:
+                </p>
+                <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-zinc-800 leading-relaxed">
+                    <li>Frontend: HTML + CSS</li>
+                    <li>Backend: PHP</li>
+                    <li>Database: SQL (MySQL)</li>
+                </ul>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Implementasi ini memungkinkan tim internal yayasan menambahkan program dan dokumentasi secara mandiri ke depannya.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="screens" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">08</span>
+                    Key Screens
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed mb-6">
+                    Bagian utama antarmuka yang ditampilkan dalam studi kasus ini mencakup:
+                </p>
+                <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-zinc-800 leading-relaxed">
+                    <li>Home Page — menghadirkan kesan pertama yang hangat dan terpercaya</li>
+                    <li>About / Profil Yayasan — membangun narasi mengenai misi dan identitas</li>
+                    <li>Program Sosial — menampilkan kontribusi dan kegiatan yayasan</li>
+                    <li>Kontak / Ajakan Kontribusi — memudahkan calon donatur untuk terhubung</li>
+                </ul>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Penekanan visual dilakukan pada keseimbangan antara informasi dan ruang putih, agar setiap elemen dapat tersampaikan secara elegan dan tidak berlebihan.
+                </p>
+                
+
+                <div class="space-y-12 mt-16">
+                    <div>
+                        <img src="assets/main page.png" 
+                             alt="Mockup Home Page" 
+                             class="rounded-lg shadow-xl w-full reveal-on-scroll">
+                        <figcaption class="text-center text-sm text-zinc-600 mt-4">Home Page — Kesan pertama yang hangat dan terpercaya.</figcaption>
+                    </div>
+                    <div>
+                        <img src="assets/tentang.png" 
+                             alt="Tentang" 
+                             class="rounded-lg shadow-xl w-full reveal-on-scroll">
+                        <figcaption class="text-center text-sm text-zinc-600 mt-4">About Page — Narasi mengenai misi dan identitas.</figcaption>
+                    </div>
+                    <div>
+                        <img src="assets/kegiatan.png" 
+                             alt="Kegiatan" 
+                             class="rounded-lg shadow-xl w-full reveal-on-scroll">
+                        <figcaption class="text-center text-sm text-zinc-600 mt-4">Program Sosial — Menampilkan kontribusi dan kegiatan.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="responsive" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">09</span>
+                    Responsiveness
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed">
+                    Website dirancang untuk tetap fungsional dan nyaman diakses pada berbagai perangkat. Layout mobile dioptimalkan agar informasi utama tetap mudah dibaca dan tombol Call to Action selalu terlihat pada area yang strategis.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Pendekatan ini memastikan pengalaman yang konsisten, baik pengguna mengakses melalui laptop maupun smartphone.
+                </p>
+                
+ 
+                <div class="mt-16 flex justify-center">
+                    <img src="assets/mobile responsive.png" 
+                         alt="Tampilan Mobile" 
+                         class="rounded-2xl shadow-xl w-full max-w-xs border-8 border-zinc-800 box-content reveal-on-scroll">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="result" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">10</span>
+                    Final Result
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed">
+                    Hasil akhir merupakan sebuah website company profile sosial yang sederhana namun kredibel, dengan fokus pada kepercayaan dan ketenangan dalam menyampaikan pesan.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Tingkat transparansi yang digunakan bersifat soft transparency, yaitu menampilkan dokumentasi kegiatan secara visual tanpa menampilkan data finansial atau penyebutan nominal. Pendekatan ini dipilih untuk menjaga kesan humanis dan elegan, tanpa menjadikan website sekadar laporan angka.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="reflection" class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-brand-secondary/40">
+            <div class="md:col-span-4">
+                <h2 class="font-sans text-3xl font-bold text-brand-primary sticky top-16">
+                    <span class="text-brand-secondary mr-2">11</span>
+                    Reflection
+                </h2>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-lg text-zinc-800 leading-relaxed">
+                    Proyek ini memberikan pembelajaran penting dalam mengemas nilai sosial ke dalam bentuk digital yang tetap terasa dekat secara emosional namun tetap profesional.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Sebagai Solo Developer, tantangan terbesar adalah menjaga keseimbangan antara kesederhanaan teknis dan kualitas presentasi visual yang sesuai dengan ekspektasi donor modern.
+                </p>
+                <p class="text-lg text-zinc-800 leading-relaxed mt-6">
+                    Ke depannya, sistem akan dikembangkan menuju panel administrasi internal agar konten dapat diperbarui lebih efisien oleh pengelola yayasan.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="closing" class="mt-16 border-t border-brand-secondary/40">
+        <div class="max-w-3xl mx-auto px-6 py-24 text-center">
+            <h2 class="font-sans text-3xl md:text-4xl text-brand-primary leading-tight mb-8 font-bold">
+                Yayasan Tausiyah Harian Indonesia kini memiliki wajah digital yang mampu memperkuat kredibilitas, serta membangun hubungan yang lebih baik dengan calon donatur dan investor.
+            </h2>
+            
+            <a href="https://tausiyahharian.com/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-block bg-brand-primary text-white font-bold py-4 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-brand-primary/90 text-lg">
+                Kunjungi Website
+            </a>
+
+            <div class="flex justify-center items-center gap-x-8 gap-y-2 flex-wrap text-zinc-700 mt-16">
+                <div>
+                    <span class="font-semibold text-zinc-800">Role:</span> Fullstack Development (Solo)
+                </div>
+                <div class="text-brand-secondary hidden md:block">|</div>
+                <div>
+                    <span class="font-semibold text-zinc-800">Year:</span> 2025
+                </div>
+            </div>
+            <hr class="my-16 border-t border-brand-secondary/30 w-1/2 mx-auto">
+
+            <h3 class="font-sans text-3xl text-brand-primary font-bold mb-4">
+                Want to work with me?
+            </h3>
+            <p class="text-lg text-zinc-700 leading-relaxed mb-8">
+                Jangan ragu untuk terhubung, baik untuk kolaborasi atau sekadar menyapa.
+            </p>
+
+           
+            <div class="flex justify-center items-center gap-6">
+
+                
+
+                <a href="mailto:majdifuadi15@gmail.com" title="Email" class="text-zinc-600 hover:text-brand-primary transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
+                    <span class="sr-only">Email</span>
+                </a>
+                
+
+                <a href="https://www.linkedin.com/in/muhammad-majdi-fuadi" title="LinkedIn" class="text-zinc-600 hover:text-brand-primary transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                
+
+                <a href="https://www.behance.net/majdifuadi" title="Behance" class="text-zinc-600 hover:text-brand-primary transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 7.5h-5c-0.83 0-1.5 0.67-1.5 1.5v1.5h5c0.83 0 1.5-0.67 1.5-1.5v-1.5zM10 12v3h6.5c0.83 0 1.5-0.67 1.5-1.5s-0.67-1.5-1.5-1.5h-6.5zM17.5 6H14v-1c0-0.55-0.45-1-1-1h-2c-0.55 0-1 0.45-1 1v1H6.5C5.67 6 5 6.67 5 7.5V16.5C5 17.33 5.67 18 6.5 18h11c0.83 0 1.5-0.67 1.5-1.5V16h1.5c0.83 0 1.5-0.67 1.5-1.5V9c0-0.83-0.67-1.5-1.5-1.5h-1.5V7.5C19 6.67 18.33 6 17.5 6zM3 21h18c1.1 0 2-0.9 2-2V5c0-1.1-0.9-2-2-2H3C1.9 3 1 3.9 1 5v14C1 20.1 1.9 21 3 21z"></path></svg>
+                    <span class="sr-only">Behance</span>
+                </a>
+                
+
+                <a href="https://wa.me/6287824014197" title="WhatsApp" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-brand-primary transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.06 21.94L7.31 20.58C8.75 21.38 10.36 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 6.45 17.5 2 12.04 2ZM17.23 14.86C16.96 15.29 15.98 15.83 15.39 15.9C14.8 15.97 14.01 15.94 13.31 15.67C12.6 15.4 11.41 15.04 10.08 13.71C8.5 12.13 7.55 10.37 7.35 9.94C7.15 9.51 6.3 8.31 6.3 7.31C6.3 6.31 6.74 5.92 7.01 5.65C7.28 5.38 7.6 5.3 7.84 5.3C8.08 5.3 8.31 5.3 8.5 5.3C8.69 5.3 8.86 5.38 9.07 5.8C9.28 6.22 9.8 7.42 9.89 7.59C9.98 7.76 10.05 7.91 9.92 8.08C9.79 8.25 9.69 8.37 9.56 8.51C9.43 8.65 9.29 8.78 9.16 8.92C9.03 9.06 8.89 9.22 9.09 9.57C9.29 9.92 9.84 10.8 10.68 11.59C11.71 12.55 12.51 12.87 12.86 13.04C13.21 13.21 13.5 13.16 13.72 12.92C13.93 12.67 14.28 12.21 14.59 11.84C14.85 11.52 15.18 11.45 15.49 11.58C15.8 11.71 16.89 12.25 17.16 12.52C17.43 12.79 17.5 13.01 17.5 13.23C17.5 13.45 17.5 14.43 17.23 14.86Z"></path></svg>
+                    <span class="sr-only">WhatsApp</span>
+                </a>
+            </div>
+
+
+            <p class="text-sm text-zinc-500 mt-16">
+                © 2025 Muhammad Majdi Fuadi.
+            </p>
+        </div>
+    </footer>
+
+    <a href="#top" id="backToTopBtn" class="fixed bottom-8 right-8 z-50 p-3 bg-brand-primary text-white rounded-full shadow-lg hover:bg-brand-primary/90 transition-all duration-300">
+ 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 11l7-7 7 7" />
+        </svg>
+    </a>
+
+ 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const revealElements = document.querySelectorAll(".reveal-on-scroll");
+
+            if (!revealElements.length) return; 
+
+            const observerOptions = {
+                root: null, 
+                rootMargin: '0px',
+                threshold: 0.1 
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                   
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+              const backToTopBtn = document.getElementById('backToTopBtn');
+
+            if (backToTopBtn) {
+                window.onscroll = () => {
+   
+                    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                        backToTopBtn.classList.add('show');
+                    } else {
+                        backToTopBtn.classList.remove('show');
+                    }
+                };
+            }
+        });
+    </script>
+
+</body>
+</html>
+
